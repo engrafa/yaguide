@@ -18,6 +18,24 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Running with Docker
+
+To run the webserver with Docker you just need to build and run the container.
+
+Build the container:
+```
+docker build . -t yaguide
+```
+
+Run the container:
+```
+docker run -p 3000:3000 yaguide
+```
+
+Note: *You may have to run these commands with* `sudo`
+
+Now the app should be running on: *http://localhost:3000/*
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
