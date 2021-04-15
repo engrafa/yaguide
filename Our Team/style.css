@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Fira Code;
+}
+
+body{
+    background: #1B1D27;
+    text-align: center;
+}
+
+.container{
+    margin: 20px 40px;
+    color: #9defff;
+}
+
+.heading{
+    padding: 20px;
+    padding-bottom: 40px;
+    font-size: 60px;
+    color:#9defff;
+}
+
+.lol{
+    padding-top:80px;
+}
+
+.profiles{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+}
+.profile{
+    flex-basis: 260px;
+    font-size: 13px;
+    transition: font-size 400ms;
+}
+.profile:hover {
+    font-size: 16px;
+}
+
+
+.profile .profile-img{
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+    filter: grayscale(50%);
+    cursor: pointer;
+}
+.profile:hover .profile-img {
+    filter: grayscale(0);
+}
+
+.user-name{
+    margin-top: 30px;
+    font-size: 35px;
+}
+.profile h4{
+    font-size: 18 px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #9defff;
+}
+.profile p{
+    font-size: 1.25em;
+    margin-top: 2em;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+    .profiles{
+        flex-direction: column;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile p{
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .heading{
+        font-size: 40px;
+        color: #9defff;
+        text-align: center;
+    }
+    .heading span{
+        font-size: 15px;
+    }
+    .profiles{
+        margin: 20px 0;
+    }
+    .profile p{
+        margin: 20px 10px 80px 10px;
+    }
+}
